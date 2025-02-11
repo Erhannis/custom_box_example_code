@@ -1,8 +1,7 @@
 #![feature(unsize)] // *Ideally* I wouldn't need these
 #![feature(coerce_unsized)]
 
-use core::{marker::PhantomData, ptr::NonNull};
-use std::{marker::Unsize, ops::CoerceUnsized};
+use core::{marker::{PhantomData, Unsize}, ptr::NonNull, ops::CoerceUnsized};
 
 use heapless::Vec;
 
