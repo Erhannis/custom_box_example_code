@@ -1,8 +1,8 @@
-use core::{marker::PhantomData, ptr::{NonNull}};
+use core::{marker::PhantomData, ptr::NonNull};
 
 use heapless::Vec;
 
-trait Valued {
+pub trait Valued {
   fn getValue(&self) -> u32;
 }
 
